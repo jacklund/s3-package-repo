@@ -10,7 +10,7 @@ resource "aws_s3_bucket" "tfstate" {
 terraform {
   backend "s3" {
     bucket = "jack-terraform-tfstate"
-    key    = "terraform.tfstate"
+    key    = "s3-package-repo.tfstate"
     region = "us-east-2"
   }
 }
